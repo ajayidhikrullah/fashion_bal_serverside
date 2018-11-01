@@ -1,0 +1,536 @@
+/* ++++++++++++++++++++
+clearing d default styles
++++++++++++++++++++++++*/
+body{
+  margin: 0;
+  padding: 0;
+}
+/*full container*/
+@media (min-width: 960px){
+.container{
+  width: auto;
+  margin: auto;
+  padding: 10px;
+  }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++
+cleareing the harsh container default style
+for the logo and logoname
++++++++++++++++++++++++++++++++++++++++++++++*/
+.header-container {
+  padding: 0;
+  margin: 0;
+}
+
+/*++++++++++++++++++++++++++++++++++++
+the harsh container for the logo and logoname
+setting the media query for minwidth (231px)
++++++++++++++++++++++++__________________*/
+@media (max-width: 231px){
+  .header-container{
+    width: auto;
+    margin: 10px;
+    margin-bottom: 0;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 320px){
+  .header-container{
+    width: auto;
+    margin: 10px;
+    margin-bottom: 0;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
+}
+
+
+
+/*___________________________________
+  logoname name styles
+  _____________________________________
+*/
+
+span.logo-name{
+  font-style: normal;
+  color: rgb(179, 136, 28);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lobster', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px;
+}
+
+/*--------------------
+ [to Hover on the logoname]
+  ----------------------*/
+span.logo-name:hover{
+  color: darkorange;
+  border: 1px solid;
+ }
+
+ a {
+text-decoration: none; }/*---this was done to clear d default 'underline'---*/
+
+/*|getting started withthe NavBar|*/
+ul.main-nav-menu {
+  padding: 0;
+  margin: 0;
+}
+
+/*setup d nav backgroundcolor/padding/margin
+to rythme with d greycolor*/
+nav{
+  background-color: chocolate;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  /* border: 2px solid coral; border-radius: 3px; */
+}
+
+/*setup d links to b inline asin intoto*/
+ul.main-nav-menu li {
+  display: inline;
+}
+
+/*[to give d links its own
+separate color gangan] - also
+added media query to d nav to b block
+level at some point
+*/
+ul.main-nav-menu li a {
+  background-color: honeydew;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: coral;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.main-nav-menu li a:hover {
+  background-color: aqua;
+  font-weight: bold;
+
+}
+
+/*- also
+added media query to d nav to b block
+level at some point
+*/
+@media (max-width: 240px){
+  ul.main-nav-menu li a {
+    display: block;
+    background-color: honeydew;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+/*section aspect
+uplod bg img, min-height so d picx and d
+text can b surrounded together*/
+
+.banner-sect {
+  background: url('../img/balqeesimg/bgimg.jpg') no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  width: 90vw;
+  margin: -40px auto 40px;
+}
+/*the h1 tag element
+set to d middle*/
+.banner-head{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  padding: 200px 0 0px;
+  font-size: 3.125em;
+  color: chocolate;
+  text-shadow: 10px 20px 10px rgb(124, 103, 56);
+}
+
+.banner-head-name{
+  color: royalblue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  line-height: 5px;
+}
+
+/*p tag element set to d center
+through d class*/
+.banner-address{
+  font-family: monospace;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  font-size: 1.875em;
+}
+
+/*second SECTION is here */
+.images-container{
+  border-radius: 10px;
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+  box-shadow: 10px 10px 10px grey;
+  background-color: antiquewhite;
+  width: 80%;
+}
+
+/*here we make d container d
+parent taking in two oda colum*/
+.images-container{
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+  box-shadow: 10px 10px 10px grey;
+  background-color: antiquewhite;
+  width: 90%;
+}
+/*merge d 2 colum togeda
+to take in images syd by syd*/
+.img-title1{
+  border-radius: 10px;
+  width: 40%;
+  float: left;
+  margin: 0px 2px 5px 5%;
+  box-shadow: 10px 5px 10px 5px;
+  padding: 0 5px;
+}
+
+/*first imade on d colum
+*/
+div .img-container1 {
+  margin: 0 auto;
+  padding: 0 0;
+  background-size: cover;
+}
+/*reshaped d whole image
+and this has access to*/
+.img-container1 img{
+  background-size: cover;
+  width: 100%;
+  border-radius: 14px;
+}
+/*for the second image
+in d colum*/
+div .img-container2 {
+  margin: 0 auto;
+  padding: 0 0;
+  background-size: cover;
+}
+
+.img-container2 img{
+  background-size: cover;
+  width: 100%;
+  border-radius: 14px;
+}
+
+h4, h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  color: chocolate;
+  text-decoration: blanchedalmond;
+  padding: 5px;
+  margin: 5px;
+}
+
+.colum-content-container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.testingg{
+  font-size: 16px;
+}
+.testinggg{
+  font-size: 100%;
+}
+
+/*the 2 column b4 d footer
+to b responsive*/
+/* @media (min-width: 320px){
+  .article-content{
+    margin:
+  }
+} */
+
+
+
+
+/*the 2 column before d footer*/
+.article-content{
+  margin: 20px auto;
+  border: 1px solid brown; border-radius: 10px;
+  max-width: 40%;
+  float: left;
+  padding: 10px;
+  background-color: burlywood;
+  text-align: justify;
+  font-family: cursive ,fantasy;
+  box-shadow: 5px 10px 5px black;
+  line-height: 25px;
+}
+
+.article-content-aside{
+  border: 1px solid brown; border-radius: 10px;
+  margin: 20px auto;
+  max-width: 40%;
+  float: right;
+  padding: 10px;
+  background-color: burlywood;
+  text-align: justify;
+  text-align: justify;
+  font-family: cursive ,fantasy;
+  box-shadow: 5px 10px 5px black;
+  line-height: 25px;
+}
+
+.offer{
+  margin: 30px auto 10px auto;
+  font-family: 'railway' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3em;
+}
+
+.btn-info{
+  text-decoration: none;
+  font: 100;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  color: chocolate;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3em;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+.test {
+  width: 80vw;
+}
+
+.tests{
+  width: 75vmin;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER section*/
+.main-footer{
+  margin: 0 auto;
+  background-color: darkgray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 5px;
+}
+
+div .footer1 p{
+  margin: 0 auto;
+  text-align: center;
+  color: darkgoldenrod;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.address{
+  margin: 0 auto;
+  text-align: center;
+  color: darkgoldenrod;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1em;
+}
+/*footer links to be designed*/
+.footer-links{
+  text-align: right;
+  list-style: none;
+}
+
+/**/
+.footer-links li a{
+  margin: 0 20%;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* OLD
+.images-container{
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px grey;
+  background-color: antiquewhite;
+  width: 80%;
+}
+
+.img-title1{
+  border: 2px solid black;
+  width: auto;
+  margin: 5px;
+  float: left;
+}*/
+
+
+  /* border: 2px solid black; border-radius: 5px;
+  width: auto;
+  max-height: 20%;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: burlywood;
+} */
+
+/*|to set the links on the right axis with no defaut styles|*/
+
+/* ul.main-nav-menu li{
+  display: inline;
+  text-decoration: none;
+  padding-right: 5px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.main-nav-menu li a {
+  color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: 2px solid grey; border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+li a:link {
+  cursor: pointer;
+
+}
+
+li a:hover {
+  color: aquamarine;
+
+} */
+
+
+/* * {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+  background-color: rgb(73, 78, 76);
+  font-family: tahoma, Verdana, serif
+}
+
+.container_header_logo {
+  background-color: bisque;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header_name {
+  flex-direction: column;
+}
+
+.main_nav {
+  display: flex;
+  border: 2px solid burlywood;
+  border-radius: 2px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.main_nav box--list {
+  list-style: none;
+
+}
+
+.main_nav box--list ul li a {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+
+
+
+
+
+/*
+.container {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.header_logo {
+  background-color: azure;
+  margin: 10PX;
+  padding: 5px;
+  color: darkcyan;
+  border-radius: 5px;
+  width: 100%;
+} */
+
+
+
+
+/* CONTACT HTML STYLING */
+
+.fa-address-card{
+  color: purple;
+
+}
