@@ -144,12 +144,13 @@ uplod bg img, min-height so d picx and d
 text can b surrounded together*/
 
 .banner-sect {
-  background: url('../img/balqeesimg/bgimg.jpg') no-repeat;
+  background: url('images/bgimg.jpg') no-repeat;
   background-size: cover;
   min-height: 500px;
   width: 90vw;
   margin: -40px auto 40px;
 }
+
 /*the h1 tag element
 set to d middle*/
 .banner-head{
