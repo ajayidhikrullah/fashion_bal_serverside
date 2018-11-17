@@ -14,9 +14,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import  include, path
+from django.urls import include, path
 
 urlpatterns = [
-    path('ballyapp/', include('ballyapp.urls')),
+    # path('ballyapp/', include('ballyapp.urls')),
+    # path('ballyapp/', include('ballyapp.urls')),
+    path('', include('ballyapp.urls')),
+    path('save/newsletter', include('ballyapp.urls')),
     path('admin/', admin.site.urls),
+    #path('/', include('index')),
+    # path('ballyapp/', include('ballyapp.urls', namespace='ballyapp')),
+
+    # path('create_news_letters/index.html', include('ballyapp.urls')),
+
 ]
